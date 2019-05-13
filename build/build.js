@@ -1830,31 +1830,25 @@ var coment = function coment() {
         case 'ADD_COMENT':
 
             // При добавлении нового комментария добавляем его в localStorage
-            var commentsState = localStorage.getItem('comments');
-            commentsState = JSON.parse(commentsState);
-            var addCommentObj = {
-                name: action.name,
-                text: action.comment,
-                date: action.time
-            };
+            var myState = localStorage.getItem('comentt');
+            myState = JSON.parse(myState);
+            var ac = { id: action.id, author: action.author, comentaries: action.comentaries, data: action.date };
 
-            commentsState.push(addCommentObj);
-            var toLocalStor = JSON.stringify(commentsState);
-            localStorage.setItem('comments', toLocalStor);
-            return [].concat(_toConsumableArray(state), [{
-                name: action.name,
-                text: action.comment,
-                date: action.time
-            }]);
+            myState.push(ac);
+            var toLocalStor = JSON.stringify(myState);
+            localStorage.setItem('comentt', toLocalStor);
+            return [].concat(_toConsumableArray(state), [{ id: action.id, author: action.author, comentaries: action.comentaries, data: action.date }]);
 
         case 'REMOVE_COMENT':
 
             // "Сплайсим" элемент, который нужно удалить (и удаляем из LocalStorage)
-            var newState = state;
-            newState.splice(action.index, 1);
 
-            var newLocalStor = JSON.stringify(newState);
-            localStorage.setItem('comments', newLocalStor);
+            var newState = state.filter(function (val) {
+                return val.id !== action.id;
+            });
+
+            var ls = JSON.stringify(newState);
+            localStorage.setItem('comentt', ls);
 
             return [].concat(_toConsumableArray(newState));
 
@@ -13601,6 +13595,7 @@ var RemoveComent = function RemoveComent(props) {
                                         'button',
                                         {
                                             onClick: function onClick(e) {
+
                                                 removeComent(add.id);
                                                 //console.log(add.id)
                                             } },
@@ -13646,21 +13641,24 @@ var _reducers2 = _interopRequireDefault(_reducers);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var commentsLoadState = void 0;
-if (localStorage.getItem('comments') === null) {
-	commentsLoadState = [];
+var myState = void 0;
+if (localStorage.getItem('comentt') === null) {
+	myState = [
+		//{id: 1, author: 'Pavel Perevedentsev' , comentaries: 'fgbgfgfh', data:''}
+	];
 } else {
-	var comments = localStorage.getItem('comments');
-	comments = JSON.parse(comments);
+	var myComents = localStorage.getItem('comentt');
+	myComents = JSON.parse(myComents);
 	var arr = [];
-	commentsLoadState = comments.map(function (item) {
+	myState = myComents.map(function (item) {
 
 		arr.push(item);
 	});
-	commentsLoadState = arr;
+	myState = arr;
 }
+localStorage.setItem('comentt', JSON.stringify(myState));
 
-var initialState = commentsLoadState;
+var initialState = myState;
 
 var store = (0, _redux.createStore)(_reducers2.default, initialState);
 
