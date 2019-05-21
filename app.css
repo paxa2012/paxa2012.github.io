@@ -1,0 +1,42 @@
+.block-img-item:hover{
+    cursor: pointer; 
+}
+.block-img-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+.block-img-item{
+    margin: 10px;
+}
+.flex{
+    display: flex;
+}
+.block-img{
+    padding: 0 10px;
+}
+.backtolenta{
+    display: flex;
+    justify-content:center;
+    
+
+}
+.bar-top{
+    height: 5vh;
+    background-color: #aaa;
+    text-align: center;
+    font-size: 30px;
+}
+.bottom-nav ul li{
+    display: block;
+    list-style-type: none;
+}
+.bottom-nav ul li{
+   padding: 0 5px;
+}
+.block-img-info > div {
+   
+
+}
+.footer{
+    background: #aaa;
+}
