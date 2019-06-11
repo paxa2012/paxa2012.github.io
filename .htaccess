@@ -7,7 +7,7 @@
     RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
     RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
     RewriteRule ^ - [L]
-    RewriteRule ^ /index.html [L]
+     RewriteRule  (. *)  Index.html  [QSA, L]
 </IfModule>
 
 
