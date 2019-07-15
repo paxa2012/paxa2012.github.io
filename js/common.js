@@ -216,22 +216,23 @@ let bt_3 = document.querySelector('.add-btn-3');
 
 	$('.hamburger').on('click', function(){
 		$('#navi').css('display', 'block');
-		$('.hamburger').css('display', 'none');
+		$('.vstricha').css('display', 'none');
 	});
 	$('.cross').on('click', function(){
 		$('#navi').css('display', 'none');
-		$('.hamburger').css('display', 'block');
+		$('.vstricha').css('display', 'flex');
 	})
 
 	// Custom JS
 
 
-	$('.hamburger-1').on('click', function(){
-		$('.myForm').css('display', 'block');
-	});
-
-	$('.cross-1').on('click', function(){
-		$('.myForm').css('display', 'none');
-		$('.hamburger-1').css('display', 'block');
-	})
+	$('.vstricha').offsetTop(300).css('display', 'flex');
+	window.addEventListener('scroll',function(){
+		if(pageYOffset> 300){
+			vstricha.style.display = 'flex'
+		}
+		else {vstricha.style.display = 'none'}
+	}
+	)
+    
 });
