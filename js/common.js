@@ -215,18 +215,18 @@ let bt_3 = document.querySelector('.add-btn-3');
 
 
 	$('.hamburger').on('click', function(){
-		$('#navigation').slideToggle( function(){
-
-			if($('#navigation').css('display') == 'block'){
-			  $('.hamburger').addClass('is-active');
-			}
-			else if($('#navigation').css('display') == 'none'){
-				$('.hamburger').removeClass('is-active');
-			}
-		
-		  });
+		$('#navi').css('display', 'block');
+		$('.hamburger').css('display', 'none');
 	});
+	$('.cross').on('click', function(){
+		$('#navi').css('display', 'none');
+		$('.hamburger').css('display', 'block');
+	})
 
 	// Custom JS
 
+
+	$('#hamburger1').on('click', function(){
+		$('#navigation').css('display', 'block');
+	});
 });

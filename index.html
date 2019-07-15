@@ -30,16 +30,33 @@
 </head>
 <body>
     <header>
-			<div class="nav-mob">
-					<div class="hamburger hamburger--elastic" tabindex="0"
-				aria-label="Menu" role="button" aria-controls="navigation">
-			 <div class="hamburger-box">
-			   <div class="hamburger-inner"></div>
-			 </div>
-		   </div>
-		   <nav id="navigation">
-			 <!--navigation goes here-->
-		   </nav>
+				<div class="row">
+					<div class="container-navi">
+							<nav id="navi">
+									<h2 class="title">Отель Ольхон</h2>
+									<div class="cross">
+											<svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<line x1="0.353553" y1="0.646447" x2="18.0312" y2="18.3241" stroke="black"/>
+												<line x1="18.3536" y1="1.35355" x2="0.675884" y2="19.0312" stroke="black"/>
+											</svg>
+												
+									</div>
+									<ul>
+										<li><a href="">Номера</a></li>
+										<li><a href="">Приключения</a></li>
+										<li><a href="">Отзывы</a></li>
+										<li><a href="">Контакты</a></li>
+									</ul>
+									<div class="mob-block-ct">
+											<a href="tel:+79021700303">+7(902) 170-03-03</a>
+											<a href="tel:+79025136896">+7(902) 513-68-96</a>
+									</div>
+									<div class="mob-block-email">
+											<a href="">alfatour@olhon.info</a>
+									</div>
+								  </nav>
+					</div>
+				</div>
 			</div>
         <div class="container-my">
             <div class="row">
@@ -85,8 +102,16 @@
         </div>                                 
     </header>
 	<section id="home">
-			
         <div class="container-my container-my-mob">
+			<div class="nav-mob">
+					<div class="hamburger">
+							<svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="30" height="4" rx="2" fill="#363636"/>
+								<rect y="8" width="30" height="4" rx="2" fill="#363636"/>
+								<rect y="16" width="30" height="4" rx="2" fill="#363636"/>
+								</svg>
+					</div>
+		   </div>
 				<div class='header-mob'>
 						<img class="header-img" src="./img/ekaterina-sazonova-y-xeaX21GfA-unsplash.png" alt="фон"/>
 						<div class='header-block-left'>
@@ -123,16 +148,62 @@
 							<p class="title-p">максимум комфорта на ольхоне</p>
 						</div>
 						<div class="vstricha">
-								<div class="hamburger hamburger--elastic" tabindex="0" aria-label="Menu" role="button" aria-controls="navigation">
-									<div class="hamburger-box">
-										 <div class="hamburger-inner"></div>
-										</div>
+								<div class="hamburger">
+										<svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect width="30" height="4" rx="2" fill="#363636"/>
+											<rect y="8" width="30" height="4" rx="2" fill="#363636"/>
+											<rect y="16" width="30" height="4" rx="2" fill="#363636"/>
+											</svg>
 								</div>
-							<nav id="navigation">
-								<!--navigation goes here-->
-							</nav>
-							<p class="p-ct">+7(902) 170-03-03 </p>
+								<p class="p-ct">+7(902) 170-03-03 </p>
 						</div>
+						<nav id="navigation">
+								<form class="myForm-mob">
+										<div class="form-group">
+										  <label for="exampleFormControlSelect1">Где вас встретить?</label>
+										  <select class="form-control" id="exampleFormControlSelect1">
+											<option>Я доберусь сам</option>
+											<option>Паром Ольхонские Ворота</option>
+											<option>ЖД Вокзал Иркутск</option>
+											<option>Аэропорт Иркутск</option>
+										  </select>
+										</div>
+										<div class="form-group">
+											<label for="exampleFormControlSelect2">Число гостей</label>
+											<select class="form-control" id="exampleFormControlSelect2" >
+												<option>1 человек</option>
+												<option>2 человекa</option>
+												<option>Группа до 6 человек</option>
+												<option>Группа больше 7 человек</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="exampleFormControlText">Вас зовут</label>
+											<input type="text" class="form-control" id="exampleFormControlText" placeholder="Ваше имя" required>
+										</div>
+										<div class="form-group">
+											<div class="block-date">
+												<div class="block-date-start">
+														<label for="date">Дата заезда</label>
+														<input type="date" class="form-control" id="date" style="margin-right: 10px" required>
+												</div>
+												<div class="block-date-end">
+														<label for="date1">Дата выезда</label>
+														<input type="date" class="form-control" id="date1" required>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+												<label for="phone">Контакты</label><br>
+												<input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+7(924)000-00-00" required>
+										</div>
+										<button type="button">Отправить</button>
+										<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck1">
+												<label class="custom-control-label" for="customCheck1">Я согласен на обработку персональных данных</label>
+											  </div>
+									  </form>
+						</nav>
 					  </div>
                 <div class='header-main'>
                         <img class="header-img" src="./img/ekaterina-sazonova-y-xeaX21GfA-unsplash.png" alt="фон"/>
@@ -1541,7 +1612,7 @@
 	<footer>
 		<div class="container-my">
 			<div class="row">
-				<div class="col">
+				<div class="col-lg-3">
 					<div class="bottom-link">
 							<li>
 								<a href="#">ООО “Большое путешествие”</a>
@@ -1551,7 +1622,7 @@
 							</li>
 					</div>
 				</div>
-				<div class="col">
+				<div class="col-lg-3">
 						<div class="bottom-link">
 						<li>
 							<a href="#">Пользовательское соглашение</a>
@@ -1561,7 +1632,7 @@
 						</li>
 						</div>
 				</div>
-				<div class="col">
+				<div class="col-lg-3">
 						<div class="bottom-link">
 						<li>
 							<a href="#">Следите за нами в insagram</a>
@@ -1571,7 +1642,7 @@
 						</li>
 						</div>
 				</div>
-				<div class="col">
+				<div class="col-lg-3">
 					<div class="aidesign_logo">
 							<svg width="147" height="147" viewBox="0 0 147 147" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M25.9522 61.3014C26.2152 61.35 26.2384 61.3787 26.3384 61.6083L33.3853 80.9261C33.4743 81.2245 33.2723 81.5406 32.9416 81.5604H28.3707C28.0765 81.5423 28.0313 81.4996 27.9242 81.2424L26.5377 77.2343H21.1996L19.8392 81.24C19.7268 81.5138 19.6712 81.543 19.3919 81.5604H14.821C14.5103 81.5417 14.2825 81.2437 14.3771 80.9261L21.4241 61.6083C21.5401 61.3419 21.5935 61.3147 21.8679 61.2979H25.8947C25.9138 61.299 25.9331 61.3001 25.9522 61.3014ZM15.4961 80.6157H19.0534L20.4138 76.61C20.5262 76.3363 20.5819 76.307 20.8612 76.2896H26.8742C27.1682 76.3077 27.2134 76.3504 27.3205 76.6076L28.707 80.6157H32.2665L25.5642 62.2426H22.1984C19.9643 68.3669 17.7302 74.4914 15.4961 80.6157ZM23.9418 66.3898C24.2101 66.4415 24.2344 66.4723 24.3297 66.7098L26.588 73.5391C26.6654 73.8342 26.4587 74.1396 26.1396 74.1598H21.5686C21.2636 74.1405 21.0348 73.8561 21.1212 73.5359L23.4339 66.7066C23.5535 66.4145 23.6096 66.3677 23.9418 66.3898ZM22.2273 73.2151H25.4858L23.8758 68.3465C23.3264 69.9693 22.7767 71.5922 22.2273 73.2151Z" fill="#572525"/>
@@ -1601,6 +1672,9 @@
 		});
 	});
 </script>
+<!--<script>
+	document.querySelector("#home .myForm").style.left = window.innerWidth-document.querySelector("#home .myForm").offsetWidth-20+'px'
+</script>-->
 
 </body>
 </html>
