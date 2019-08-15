@@ -9,5 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	$(window).on("scroll", function() {
         $(document).scrollTop() > 840 ? $(".navbar").addClass("fixed-top") : $(".navbar").removeClass("fixed-top")
-    })
+	})
+	
+	
 });
