@@ -1,49 +1,15 @@
-@media (max-width: 575.98px) {
-    #services .block-services .block-services-h2{
-        font-size: 40px;
-    }
-    #about .block-about .about-h2{
-        font-size: 40px;
-    }
-    #partfolio .block-partfolio .block-partfolio-h2{
-        font-size: 40px;
-    }
-    #features .block-features .block-features-h2{
-        font-size: 30px;
-    }
-    #features .block-tabs .nav-my .nav-item{
-        width: 100%;
-        text-align: center;
-    }
-    #work .block-work .block-work-h2{
-        font-size: 40px;
-    }
-    #work .gallery .nav .nav-item{
-        width: 100%;
-        text-align: center;
-    }
-    #contact .block-contact .block-contact-h2{
-        font-size: 40px;
-    }
-    footer .footer-block-icon .fab{
-        font-size: 23px;
-        margin-right: 10px;
-    }
-    #infinite .block-infinite-h2{
-        font-size: 40px;
-    }
+@media (max-width: 1199.98px) {
+}
+/* Средние девайсы («таблетки», < 992px) */
+@media (max-width: 991.98px) {
     #subesribe .block-subesribe .subesribe-input .fas{
         top: 67px;
     }
-    #partfolio .partfolio-item .block-partfolio-text .block-text{
-        font-size: 14px;
+    #work .gallery .nav .nav-item .nav-link{
+        font-size: 11px;
     }
-    #platform .platform-block .block-platform .block .block-platform-text .bold{
-        font-size: 18px;
-    }
+
 }
-
-
 /* Малые девайсы («ландшафтные», < 768px)*/
 @media (max-width: 767.98px) {
     #bottom-info .item:after{
@@ -67,14 +33,54 @@
     }
 }
 
-/* Средние девайсы («таблетки», < 992px) */
-@media (max-width: 991.98px) {
+
+@media (max-width: 575.98px) {
+    #services .block-services .block-services-h2{
+        font-size: 40px;
+    }
+    #about .block-about .about-h2{
+        font-size: 40px;
+    }
+    #partfolio .block-partfolio .block-partfolio-h2{
+        font-size: 40px;
+    }
+    #features .block-features .block-features-h2{
+        font-size: 30px;
+    }
+    #features .block-tabs .nav-my .nav-item{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #work .block-work .block-work-h2{
+        font-size: 40px;
+    }
+    #work .gallery .nav .nav-item{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+
+    }
+    #work .gallery .nav .nav-item .nav-link{
+        font-size: 18px;}
+    #contact .block-contact .block-contact-h2{
+        font-size: 40px;
+    }
+    footer .footer-block-icon .fab{
+        font-size: 23px;
+        margin-right: 10px;
+    }
+    #infinite .block-infinite-h2{
+        font-size: 40px;
+    }
     #subesribe .block-subesribe .subesribe-input .fas{
         top: 67px;
     }
-
+    #partfolio .partfolio-item .block-partfolio-text .block-text{
+        font-size: 14px;
+    }
+    #platform .platform-block .block-platform .block .block-platform-text .bold{
+        font-size: 18px;
+    }
 }
 
-/* Большие девайсы (большие десктопы, < 1200px)*/
-@media (max-width: 1199.98px) {
-}
