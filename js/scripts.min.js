@@ -1,6 +1,21 @@
 $(function() {
 
 	// Custom JS
+	
+		$('.box-item-body').hide();
+	$('.box-item').on('click', function(){
+		$('.box-item').removeClass('active');
+		$(this).addClass('active');
+		if($('.box-item').hasClass('active')){
+			$('.box-item-body').slideUp();
+			$(this).find('.box-item-body').slideDown();
+		}
+		else{
+			$('.box-item-body').slideUp();
+		}
+	});
+
+	
 	$('.filters li').click(function () {
 		$('.filters li').removeClass('active');
 		$(this).addClass('active');
@@ -66,7 +81,7 @@ $(function() {
 		$(this).addClass('activ')
 
 		$("html, body").animate({
-			scrollTop: $($(this).attr("href")).offset().top + margin + "px" // .top+margin - ставьте минус, если хотите увеличить отступ
+			scrollTop: $($(this).attr("href")).offset().top // .top+margin - ставьте минус, если хотите увеличить отступ
 		}, {
 				duration: 1000, // тут можно контролировать скорость
 				easing: "swing"
