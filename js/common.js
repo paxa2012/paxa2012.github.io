@@ -39,7 +39,7 @@ $(function() {
 	});
 	$(window).on("scroll", function () {
 		$(document).scrollTop() > 840 ? $(".navbar").addClass("fixed-top") : $(".navbar").removeClass("fixed-top");
-		$(document).scrollTop() > 840 ? $(".block-services").css({'margin-top': '202px'}) : $(".block-services").css({'margin-top': '70px'});
+		$(document).scrollTop() > 840 ? $(".block-services").css({'margin-top': '217px'}) : $(".block-services").css({'margin-top': '81px'});
 	});
 	$(window).on("scroll", function () {
 		$(document).scrollTop() > 1840 ? $(".button-up").css({'display': 'block'}) : $(".button-up").css({'display': 'none'})
