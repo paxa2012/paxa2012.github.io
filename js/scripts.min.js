@@ -94,13 +94,14 @@ $(function() {
 
 });
 
+
 var vid = document.getElementById('my-video');
 function playVid(){
 	return vid.paused ? vid.play(
-		$('.header-img-video .fas').removeClass('fa-play'),
-		$('.header-img-video .fas').addClass('fa-pause'),
+		$('.header-img-video .far').removeClass('fa-play-circle'),
+		$('.header-img-video .far').addClass('fa-pause-circle'),
 	) : vid.pause(
-		$('.header-img-video .fas').removeClass('fa-pause'),
-		$('.header-img-video .fas').addClass('fa-play'),
+		$('.header-img-video .far').removeClass('fa-pause-circle'),
+		$('.header-img-video .far').addClass('fa-play-circle'),
 	);
 }
