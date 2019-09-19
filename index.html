@@ -18,8 +18,8 @@
 <body>
 	<header id="header" class="main-header">
 		<div class="header-video-block">
-			<video preload="auto" loop id="my-video" width="100%" height="90vh">
-				<source src="./img/Beautiful, Free Tech Stock Video Footage for your Homepage (6).mp4" type="video/mp4">
+			<video id="my-video" width="100" height="90" preload="auto" loop>
+				<source src="./img/Beautiful_Free_Tech_Stock_Video_Footage_for_your_Homepage.mp4" type="video/mp4">
 				<!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
 			</video>
 		</div>
@@ -35,7 +35,7 @@
 						<button class="far fa-play-circle"></button>
 					</div>
 					<div class="header-form">
-						<form class="form" action="">
+						<form class="form" action="post">
 							<input class="input-text" type="text" placeholder="Your Name">
 							<input class="input-text" type="email" placeholder="Email Adress">
 							<input class="btn-sub" type="submit" value="Subscribe »">
@@ -99,7 +99,7 @@
 				<div class="col">
 					<div class="block-services">
 						<div class="smail">
-							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="69px" height="69px"
 								viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
 								<g>
@@ -118,7 +118,7 @@
 							</svg>
 						</div>
 						<div class="block-services-p">Product Features</div>
-						<div class="block-services-h2"> What we <span class="green">do</span></div>
+						<h2 class="block-services-h2"> What we <span class="green">do</span></h2>
 					</div>
 				</div>
 			</div>
@@ -126,7 +126,7 @@
 				<div class="col-md-4 col-sm-12 item">
 					<div class="">
 						<div class="item-img">
-							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="69px" height="69px"
 								viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
 								<g>
@@ -214,14 +214,14 @@
 			</div>
 		</div>
 	</section>
-	<hr class="100vw">
+	<div class="hr"></div>
 	<section id="about">
 		<div class="container">
 			<div class="row">
 				<div class="col">
 					<div class="block-about">
 						<div class="block-img">
-							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="63px" height="69px"
 								viewBox="0 0 28 32" enable-background="new 0 0 28 32" xml:space="preserve">
 								<g>
@@ -246,7 +246,7 @@
 							</svg>
 						</div>
 						<div class="about-p">content description</div>
-						<div class="about-h2">Our <span class="green">Contents</span></div>
+						<h2 class="about-h2">Our <span class="green">Contents</span></h2>
 					</div>
 				</div>
 			</div>
@@ -263,65 +263,82 @@
 								<div class="block-zaglyshka">
 									<img class="img-responsive"
 										src="https://47u9gy2wg8bf1okhiz2x0n9i-wpengine.netdna-ssl.com/wp-content/uploads/how-to-write-a-meta-description-1.png"
-										alt="bpj,hf;tybt ckfqlthf" width="100%" height="100%">
+										alt="bpj,hf;tybt ckfqlthf" style="width:100%; height:100%">
 								</div>
 							</div>
 							<div class="carousel-item">
 								<div class="block-zaglyshka">
 									<img class="img-responsive"
 										src="https://47u9gy2wg8bf1okhiz2x0n9i-wpengine.netdna-ssl.com/wp-content/uploads/how-to-write-a-meta-description-1.png"
-										alt="bpj,hf;tybt ckfqlthf" width="100%" height="100%">
+										alt="bpj,hf;tybt ckfqlthf" style="width:100%; height:100%">
 								</div>
 							</div>
 							<div class="carousel-item">
 								<div class="block-zaglyshka">
 									<img class="img-responsive"
 										src="https://47u9gy2wg8bf1okhiz2x0n9i-wpengine.netdna-ssl.com/wp-content/uploads/how-to-write-a-meta-description-1.png"
-										alt="bpj,hf;tybt ckfqlthf" width="100%" height="100%">
+										alt="bpj,hf;tybt ckfqlthf" style="width:100%; height:100%">
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-12">
-					<div class="block-box">
-						<div class="box-item active">
-							<div class="box-item-h2">lorem message</div>
-							<div class="box-item-par">first message</div>
-							<div class="box-item-body">Nunc placerat mi id nisi interdum mollis. Praesent
-								pharetra, justo ut scelerisque mattis, leo quam
-								aliquet diam, congue laoreet elit metus eget
-								diam. Proin ac metus diam.
+					<div class="accordion" id="accordionExample">
+						<div class="card">
+							<div class="box-item" data-toggle="collapse" data-target="#collapseOne"
+								aria-expanded="true">
+								<div class="box-item-h2">lorem message</div>
+								<div class="box-item-par">first message</div>
 							</div>
-						</div>
-						<div class="box-item">
-							<div class="box-item-h2">lorem message</div>
-							<div class="box-item-par">second message</div>
-							<div class="box-item-body">
-								Nunc placerat mi id nisi interdum mollis. Praesent
-								pharetra, justo ut scelerisque mattis, leo quam
-								aliquet diam, congue laoreet elit metus eget
-								diam. Proin ac metus diam.
-							</div>
-						</div>
-						<div class="box-item">
-							<div class="box-item-h2">lorem message</div>
-							<div class="box-item-par">third message</div>
-							<div class="box-item-body">
-								Nunc placerat mi id nisi interdum mollis. Praesent
-								pharetra, justo ut scelerisque mattis, leo quam
-								aliquet diam, congue laoreet elit metus eget
-								diam. Proin ac metus diam.
-							</div>
-						</div>
-					</div>
 
-					<div class="box-item">
-						<div class="box-item-h3">
-							Nunc placerat mi id nisi interdum mollis. Praesent
-							pharetra, justo ut scelerisque mattis, leo quam
+							<div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+								<div class="box-item-body">
+									Nunc placerat mi id nisi interdum mollis. Praesent
+									pharetra, justo ut scelerisque mattis, leo quam
+									aliquet diam, congue laoreet elit metus eget
+									diam. Proin ac metus diam.
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="box-item collapsed" data-toggle="collapse" data-target="#collapseTwo"
+								aria-expanded="false">
+								<div class="box-item-h2">lorem message</div>
+								<div class="box-item-par">second message</div>
+							</div>
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+								data-parent="#accordionExample">
+								<div class="box-item-body">
+									Nunc placerat mi id nisi interdum mollis. Praesent
+									pharetra, justo ut scelerisque mattis, leo quam
+									aliquet diam, congue laoreet elit metus eget
+									diam. Proin ac metus diam.
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="box-item collapsed" data-toggle="collapse" data-target="#collapseThree"
+								aria-expanded="false">
+								<div class="box-item-h2">lorem message</div>
+								<div class="box-item-par">third message</div>
+							</div>
+							<div id="collapseThree" class="collapse" data-parent="#accordionExample">
+								<div class="box-item-body">
+									Nunc placerat mi id nisi interdum mollis. Praesent
+									pharetra, justo ut scelerisque mattis, leo quam
+									aliquet diam, congue laoreet elit metus eget
+									diam. Proin ac metus diam.
+								</div>
+							</div>
 						</div>
 					</div>
+					<div class="box-item">
+							<div class="box-item-h3">
+								Nunc placerat mi id nisi interdum mollis. Praesent
+								pharetra, justo ut scelerisque mattis, leo quam
+							</div>
+						</div>
 				</div>
 			</div>
 		</div>
@@ -332,7 +349,7 @@
 				<div class="col">
 					<div class="block-portfolio">
 						<div class="portfolio-img">
-							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="69px" height="69px"
 								viewBox="0 0 31.87 32" enable-background="new 0 0 31.87 32" xml:space="preserve">
 								<g>
@@ -363,7 +380,7 @@
 							</svg>
 						</div>
 						<div class="block-portfolio-p mt-4">Choose your required service from here</div>
-						<div class="block-portfolio-h2">Services We <span class="green">Provide</span></div>
+						<h2 class="block-portfolio-h2">Services We <span class="green">Provide</span></h2>
 					</div>
 				</div>
 			</div>
@@ -382,7 +399,7 @@
 					<div class="portfolio-item">
 						<div class="item-title">Web Development</div>
 						<div class="item-img">
-							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="69px" height="69px"
 								viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
 								<g>
@@ -403,7 +420,7 @@
 					<div class="portfolio-item">
 						<div class="item-title">Web Maintenance</div>
 						<div class="item-img">
-							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="69px" height="69px"
 								viewBox="0 0 31.87 32" enable-background="new 0 0 31.87 32" xml:space="preserve">
 								<g>
@@ -449,7 +466,7 @@
 					<div class="portfolio-item">
 						<div class="item-title">Web Development</div>
 						<div class="item-img">
-							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="69px" height="69px"
 								viewBox="0 0 22 32" enable-background="new 0 0 22 32" xml:space="preserve">
 								<g>
@@ -479,7 +496,7 @@
 					<div class="portfolio-item">
 						<div class="item-title">Web Maintenance</div>
 						<div class="item-img">
-							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="69px" height="69px"
 								viewBox="0 0 37 32" enable-background="new 0 0 37 32" xml:space="preserve">
 								<g>
@@ -532,7 +549,7 @@
 				<div class="col">
 					<div class="block-features">
 						<div class="features-img">
-							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="69px" height="69px"
 								viewBox="0 0 30 32" enable-background="new 0 0 30 32" xml:space="preserve">
 								<g>
@@ -571,7 +588,7 @@
 							</svg>
 						</div>
 						<div class="block-features-p">PRODUCT FEATURES</div>
-						<div class="block-features-h2">What Our <span class="green">Features..</span></div>
+						<h2 class="block-features-h2">What Our <span class="green">Features..</span></h2>
 					</div>
 				</div>
 			</div>
@@ -580,26 +597,25 @@
 					<ul class="nav nav-my mb-3 justify-content-center" id="pills-tab" role="tablist">
 						<li class="nav-item">
 							<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-imtroduction"
-								role="tab" aria-controls="pills-home" aria-selected="true">INTRODUCTION</a>
+								role="tab" aria-selected="true">INTRODUCTION</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-about" role="tab"
-								aria-controls="pills-profile" aria-selected="false">ABOUT</a>
+							<a class="nav-link" id="pills-about-tab" data-toggle="pill" href="#pills-about" role="tab"
+								aria-selected="false">ABOUT</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-features"
-								role="tab" aria-controls="pills-contact" aria-selected="false">FEATURES</a>
+							<a class="nav-link" id="pills-features-tab" data-toggle="pill" href="#pills-features"
+								role="tab" aria-selected="false">FEATURES</a>
 						</li>
 					</ul>
 					<div class="tab-content" id="pills-tabContent">
-						<div class="tab-pane fade show active" id="pills-imtroduction" role="tabpanel"
-							aria-labelledby="pills-home-tab">
+						<div class="tab-pane fade show active" id="pills-imtroduction" role="tabpanel">
 							<div class="row">
 								<div class="col-lg-6 col-sm-12 pb-4">
 									<div style="padding:56.25% 0 0 0;position:relative;"><iframe
 											src="https://player.vimeo.com/video/77245256?title=0&byline=0&portrait=0"
 											style="position:absolute;top:0;left:0;width:100%;height:100%;"
-											frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+											allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 									<script src="https://player.vimeo.com/api/player.js"></script>
 
 								</div>
@@ -616,14 +632,14 @@
 								</div>
 							</div>
 						</div>
-						<div class="tab-pane fade" id="pills-about" role="tabpanel" aria-labelledby="pills-profile-tab">
+						<div class="tab-pane fade" id="pills-about" role="tabpanel">
 							<div class="row">
 								<div class="col-lg-6 col-sm-12 pb-4">
 
 									<div style="padding:56.25% 0 0 0;position:relative;"><iframe
 											src="https://player.vimeo.com/video/77245256?title=0&byline=0&portrait=0"
 											style="position:absolute;top:0;left:0;width:100%;height:100%;"
-											frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+											allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 									<script src="https://player.vimeo.com/api/player.js"></script>
 
 								</div>
@@ -640,15 +656,14 @@
 								</div>
 							</div>
 						</div>
-						<div class="tab-pane fade" id="pills-features" role="tabpanel"
-							aria-labelledby="pills-contact-tab">
+						<div class="tab-pane fade" id="pills-features" role="tabpanel">
 							<div class="row">
 								<div class="col-lg-6 col-sm-12 pb-4">
 
 									<div style="padding:56.25% 0 0 0;position:relative;"><iframe
 											src="https://player.vimeo.com/video/77245256?title=0&byline=0&portrait=0"
 											style="position:absolute;top:0;left:0;width:100%;height:100%;"
-											frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+											allow="autoplay; fullscreen" allowfullscreen></iframe></div>
 									<script src="https://player.vimeo.com/api/player.js"></script>
 
 								</div>
@@ -668,6 +683,7 @@
 					</div>
 				</div>
 			</div>
+		</div>
 	</section>
 	<section id="work">
 		<div class="container">
@@ -675,7 +691,7 @@
 				<div class="col">
 					<div class="block-work">
 						<div class="features-img">
-							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="69px" height="69px"
 								viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
 								<g>
@@ -691,7 +707,7 @@
 							</svg>
 						</div>
 						<div class="block-work-p">portfolio</div>
-						<div class="block-work-h2"> Our <span class="green">Works</span></div>
+						<h2 class="block-work-h2"> Our <span class="green">Works</span></h2>
 					</div>
 				</div>
 			</div>
@@ -707,12 +723,12 @@
 				</li>
 			</ul>
 
-			<div class="gallery-items-row row no-gutters"></a>
+			<div class="gallery-items-row row no-gutters">
 				<div class="item-column col-lg-3 col-sm-6 col-xs-12">
 					<div class="box-color" style="background-color: #fdbd4f">
 						<img class="gallery-item img-responsive" data-gallery-tag="Web_Design"
 							src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIQERUQEREVDxUVFhIQGBEVEhIQFhcSFhIWFhYTFxUYHCghGBomHRUXIjEhMSorMC4uGB8zODMtNygtLisBCgoKDg0OGhAPGiseHSUrLS83MysvLjAtNS0rKy8tLSstLy0tLy0rNy0uMC0tNystLS0tLS0tLS0tLS0tKy04Lf/AABEIAJ8BPgMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABgcEBQECAwj/xABWEAABAgMDBQgLCgoJBQAAAAABAAIDBBEFEiEGEzFBUQcUVGFxkZPSFhciMlNykrGz0eEIFSNCZIGUocHTJDM0NTZEUlVWwyViY3OCorLi8CZDdIS0/8QAGgEBAQEBAQEBAAAAAAAAAAAAAAECBAMGBf/EADERAQABAgIIBAUEAwAAAAAAAAABAhEDBBITFCFRUpHRBTFxsRUyQaHwQmGy4SI0gf/aAAwDAQACEQMRAD8At5ERaZEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQERUflBlHbM1aszJyEWJ8C57WwYeZZSHDLWl5L6VNSDp14YIq8EVH7yys+U9JK9ZN5ZWfKeklOspcsvBFR+88rPlPSynWXG88rPlPSynWS5ZeKKj955WfKellOsm88rPlPSynWS5ZeCKj955WbZnpJTrJvPKz5T0sp1kuWXgipBkplYCD+EGmNDElaHiNHaFPQy0XNBzcdhIBLM4CWkjFtQ6holyyZIoLEgWrqbH6QdZYsSXtnU2P0jOsrcWIirN8tbmoTHSQ+ssezLbtGXn4EvNPeM46G10KIWPqyI4tDgRWhrU6dSXLLURERBERAREQEREBERAREQEREBERAREQEREBERAREQFR9hWoZXKOeihgiYzLKF13TFhmtaHYrwXz+38/T3jzHpGK0xeqIeOZrqowaqqfOIWbFyuDiXOlWkmlfhnjQKDQF3g5ZXK3ZZorSvwzzo0aW8aiq7wm1ONfmFV06ung+bjxHMz+v7R2Svs6fwdvSnqp2dP4O3pT1VF8239r/KVxcb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"
-							width="100%">
+							style="width:100%" alt="img-galery">
 						<div class="hidden-header-text">
 							<p class="img-link-top"><a href="">Bootstrap</a></p>
 							<p class="img-link-top"><a href="">Landing</a></p>
@@ -727,7 +743,8 @@
 				<div class="item-column col-lg-3 col-sm-6 col-xs-12">
 					<div class="box-color" style="background-color: #b8c496">
 						<img class="gallery-item img-responsive" data-gallery-tag="Web_Development"
-							src="https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png" width="100%">
+							src="https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png"
+							style="width:100%" alt="img-galery">
 						<div class="hidden-header-text">
 							<p class="img-link-top"><a href="">Bootstrap</a></p>
 							<p class="img-link-top"><a href="">Landing</a></p>
@@ -742,7 +759,8 @@
 				<div class="item-column col-lg-3 col-sm-6 col-xs-12">
 					<div class="box-color" style="background-color: #65bcd0">
 						<img class="gallery-item img-responsive" data-gallery-tag="Web_Development"
-							src="https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png" width="100%">
+							src="https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png"
+							style="width:100%" alt="img-galery">
 						<div class="hidden-header-text">
 							<p class="img-link-top"><a href="">Bootstrap</a></p>
 							<p class="img-link-top"><a href="">Landing</a></p>
@@ -757,7 +775,8 @@
 				<div class="item-column col-lg-3 col-sm-6 col-xs-12">
 					<div class="box-color" style="background-color: #d7f0ed">
 						<img class="gallery-item img-responsive" data-gallery-tag="Web_Development"
-							src="https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png" width="100%">
+							src="https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png"
+							style="width:100%" alt="img-galery">
 						<div class="hidden-header-text">
 							<p class="img-link-top"><a href="">Bootstrap</a></p>
 							<p class="img-link-top"><a href="">Landing</a></p>
@@ -773,7 +792,7 @@
 					<div class="box-color" style="background-color: #e0eaf3">
 						<img class="gallery-item img-responsive" data-gallery-tag="Uncategorized"
 							src="https://www.sharethese.org/getridofthese_blog/wp-content/uploads/2017/12/InTheDark-1038x576.png"
-							width="100%">
+							style="width:100%" alt="img-galery">
 						<div class="hidden-header-text">
 							<p class="img-link-top"><a href="">Bootstrap</a></p>
 							<p class="img-link-top"><a href="">Landing</a></p>
@@ -790,7 +809,7 @@
 					<div class="box-color" style="background-color: #d2c2b3">
 						<img class="gallery-item img-responsive" data-gallery-tag="Uncategorized"
 							src="https://www.sharethese.org/getridofthese_blog/wp-content/uploads/2017/12/InTheDark-1038x576.png"
-							width="100%">
+							style="width:100%" alt="img-galery">
 						<div class="hidden-header-text">
 
 							<p class="img-link-top"><a href="">Bootstrap</a></p>
@@ -808,7 +827,7 @@
 					<div class="box-color" style="background-color: #e5e4e2">
 						<img class="gallery-item img-responsive" data-gallery-tag="Web_Design"
 							src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIQERUQEREVDxUVFhIQGBEVEhIQFhcSFhIWFhYTFxUYHCghGBomHRUXIjEhMSorMC4uGB8zODMtNygtLisBCgoKDg0OGhAPGiseHSUrLS83MysvLjAtNS0rKy8tLSstLy0tLy0rNy0uMC0tNystLS0tLS0tLS0tLS0tKy04Lf/AABEIAJ8BPgMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABgcEBQECAwj/xABWEAABAgMDBQgLCgoJBQAAAAABAAIDBBEFEiEGEzFBUQcUVGFxkZPSFhciMlNykrGz0eEIFSNCZIGUocHTJDM0NTZEUlVWwyViY3OCorLi8CZDdIS0/8QAGgEBAQEBAQEBAAAAAAAAAAAAAAECBAMGBf/EADERAQABAgIIBAUEAwAAAAAAAAABAhEDBBITFCFRUpHRBTFxsRUyQaHwQmGy4SI0gf/aAAwDAQACEQMRAD8At5ERaZEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQERUflBlHbM1aszJyEWJ8C57WwYeZZSHDLWl5L6VNSDp14YIq8EVH7yys+U9JK9ZN5ZWfKeklOspcsvBFR+88rPlPSynWXG88rPlPSynWS5ZeKKj955WfKellOsm88rPlPSynWS5ZeCKj955WbZnpJTrJvPKz5T0sp1kuWXgipBkplYCD+EGmNDElaHiNHaFPQy0XNBzcdhIBLM4CWkjFtQ6holyyZIoLEgWrqbH6QdZYsSXtnU2P0jOsrcWIirN8tbmoTHSQ+ssezLbtGXn4EvNPeM46G10KIWPqyI4tDgRWhrU6dSXLLURERBERAREQEREBERAREQEREBERAREQEREBERAREQFR9hWoZXKOeihgiYzLKF13TFhmtaHYrwXz+38/T3jzHpGK0xeqIeOZrqowaqqfOIWbFyuDiXOlWkmlfhnjQKDQF3g5ZXK3ZZorSvwzzo0aW8aiq7wm1ONfmFV06ung+bjxHMz+v7R2Svs6fwdvSnqp2dP4O3pT1VF8239r/KVxcb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"
-							width="100%">
+							style="width:100%" alt="img-galery">
 						<div class="hidden-header-text">
 							<p class="img-link-top"><a href="">Bootstrap</a></p>
 							<p class="img-link-top"><a href="">Landing</a></p>
@@ -824,7 +843,7 @@
 					<div class="box-color" style="background-color: #ffc301">
 						<img class="gallery-item img-responsive" data-gallery-tag="Uncategorized"
 							src="https://www.sharethese.org/getridofthese_blog/wp-content/uploads/2017/12/InTheDark-1038x576.png"
-							width="100%">
+							style="width:100%" alt="img-galery">
 						<div class="hidden-header-text">
 
 							<p class="img-link-top"><a href="">Bootstrap</a></p>
@@ -840,9 +859,6 @@
 				</div>
 			</div>
 		</div>
-
-		</div>
-		</div>
 	</section>
 	<section id="team">
 		<div class="container">
@@ -850,7 +866,7 @@
 				<div class="col">
 					<div class="block-team">
 						<div class="team-img">
-							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="69px" height="69px"
 								viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
 								<g>
@@ -918,7 +934,7 @@
 							</svg>
 						</div>
 						<div class="block-team-p">People Who cares</div>
-						<div class="block-team-h2">Our <span class="green">Team</span></div>
+						<h2 class="block-team-h2">Our <span class="green">Team</span></h2>
 					</div>
 				</div>
 			</div>
@@ -926,7 +942,7 @@
 				<div class="col-lg-4 col-sm-12">
 					<div class="team-box">
 						<div class="box-img">
-							<img class="img-responsive" src="img/SRunDgkDK60 (1).jpg" alt="img">
+							<img class="img-responsive" src="img/SRunDgkDK60.jpg" alt="img">
 						</div>
 						<div class="box-h2">Alex Potter</div>
 						<div class="box-h3">Website Designer</div>
@@ -940,7 +956,7 @@
 				<div class="col-lg-4 col-sm-12">
 					<div class="team-box">
 						<div class="box-img">
-							<img class="img-responsive" src="img/SRunDgkDK60 (1).jpg" alt="">
+							<img class="img-responsive" src="img/SRunDgkDK60.jpg" alt="img">
 						</div>
 						<div class="box-h2">Peter Parker</div>
 						<div class="box-h3">Website Developer</div>
@@ -954,7 +970,7 @@
 				<div class="col-lg-4 col-sm-12">
 					<div class="team-box">
 						<div class="box-img">
-							<img class="img-responsive" src="img/SRunDgkDK60 (1).jpg" alt="">
+							<img class="img-responsive" src="img/SRunDgkDK60.jpg" alt="img">
 						</div>
 						<div class="box-h2">Armoer Janson</div>
 						<div class="box-h3">Wordpress Developerr</div>
@@ -972,12 +988,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-sm-12">
-					<img class="img-responsivee" src="./img/Layer 49.png" alt="images" height="auto">
+					<img class="img-responsivee" src="./img/Layer.png" alt="images" style="height:auto">
 				</div>
 				<div class="col-lg-6 col-sm-12">
 					<div class="block-title">
 						<div class="title-h1">new features</div>
-						<div class="title-h2">Some extra <span class="green">Love</span> from us</div>
+						<h2 class="title-h2">Some extra <span class="green">Love</span> from us</h2>
 						<p class="title-p">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor.</p>
 					</div>
 					<div class="row">
@@ -1056,15 +1072,16 @@
 					</div>
 				</div>
 			</div>
+		</div>
 	</section>
 	<section id="overlay">
 		<div class="container">
-			<div class="overlay-text">70% People Belive Another Consumer's Opinion Posted Online</div>
+			<h2 class="overlay-text">70% People Belive Another Consumer's Opinion Posted Online</h2>
 			<div class="row">
 				<div class="col-md-3 col-sm-12 item">
 					<div class="block-overlay">
 						<div class="block-overlay-icon">
-							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="47px" height="47px"
 								viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
 								<g>
@@ -1088,10 +1105,9 @@
 				</div>
 				<div class="col-md-3 col-sm-12 item">
 					<div class="block-overlay">
-						<div class="block-overlay-icon"><svg version="1.1" id="Layer_1"
-								xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-								y="0px" width="47px" height="47px" viewBox="0 0 32 32" enable-background="new 0 0 32 32"
-								xml:space="preserve">
+						<div class="block-overlay-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="47px" height="47px"
+								viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
 								<g>
 									<path fill="#fff" d="M16-0.034C7.159-0.034-0.035,7.158-0.035,16S7.159,32.034,16,32.034S32.035,24.842,32.035,16
                                    S24.841-0.034,16-0.034z M16,30.966C7.748,30.966,1.035,24.252,1.035,16S7.748,1.034,16,1.034S30.965,7.748,30.965,16
@@ -1124,10 +1140,9 @@
 				</div>
 				<div class="col-md-3 col-sm-12 item">
 					<div class="block-overlay">
-						<div class="block-overlay-icon"><svg version="1.1" id="Layer_1"
-								xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-								y="0px" width="47px" height="47px" viewBox="0 0 32 32" enable-background="new 0 0 32 32"
-								xml:space="preserve">
+						<div class="block-overlay-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="47px" height="47px"
+								viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
 								<g>
 									<path fill="#fff" d="M16-0.034C7.159-0.034-0.035,7.158-0.035,16S7.159,32.034,16,32.034S32.035,24.842,32.035,16
                                    S24.841-0.034,16-0.034z M16,30.966C7.748,30.966,1.035,24.252,1.035,16S7.748,1.034,16,1.034S30.965,7.748,30.965,16
@@ -1148,10 +1163,9 @@
 				</div>
 				<div class="col-md-3 col-sm-12 item">
 					<div class="block-overlay">
-						<div class="block-overlay-icon"><svg version="1.1" id="Layer_1"
-								xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-								y="0px" width="47px" height="47px" viewBox="0 0 25 32" enable-background="new 0 0 25 32"
-								xml:space="preserve">
+						<div class="block-overlay-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="47px" height="47px"
+								viewBox="0 0 25 32" enable-background="new 0 0 25 32" xml:space="preserve">
 								<g>
 									<path fill="#fff"
 										d="M13.552,22c5.79,0,10.5-4.71,10.5-10.5S19.342,1,13.552,1s-10.5,4.71-10.5,10.5S7.762,22,13.552,22z
@@ -1179,7 +1193,7 @@
 			<div class="row">
 				<div class="offset-lg-7 offset-sm-0 col-md-5 col-sm-12">
 					<div class="block-subesribe">
-						<div class="subesribe-title">Subscribe</div>
+						<h2 class="subesribe-title">Subscribe</h2>
 						<div class="subesribe-input">
 							<input type="email" placeholder="Enter your email">
 							<a href="mailto:exemple@example.com"><i class="fas fa-envelope"></i></a>
@@ -1196,7 +1210,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col p-5">
-					<div class="block-infinite-text">Brought you by <spanclass="green">Infinite</span></div>
+					<div class="block-infinite-text">Brought you by <span class="green">Infinite</span></div>
 					<div class="block-infinite-img">
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65px"
 							height="31px">
@@ -1204,7 +1218,7 @@
 								xlink:href="data:img/png;base64,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" />
 						</svg>
 					</div>
-					<div class="block-infinite-h2">design better. faster. together.</div>
+					<h2 class="block-infinite-h2">design better. faster. together.</h2>
 					<p class="block-infinite-p">The Infinite is most converting landing page ever, Everything you can
 						wish for.</p>
 					<a href="!#" class="block-infinite-btn">Buy Now</a>
@@ -1218,7 +1232,7 @@
 				<div class="col">
 					<div class="block-packages">
 						<div class="packages-img">
-							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="69px" height="69px"
 								viewBox="0 0 31 32" enable-background="new 0 0 31 32" xml:space="preserve">
 								<g>
@@ -1240,7 +1254,7 @@
 							</svg>
 						</div>
 						<div class="block-packages-p">product packages</div>
-						<div class="block-packages-h2">Select your <span class="green">best deal !</span></div>
+						<h2 class="block-packages-h2">Select your <span class="green">best deal !</span></h2>
 					</div>
 				</div>
 			</div>
@@ -1320,12 +1334,12 @@
 			<div class="row">
 				<div class="col">
 					<div class="platform-block">
-						<div class="block-title">Get it right now</div>
-						<div class="block-p">Supported By Every Platfrom<a href="#" class="green"> know more</span>
-						</div>
+						<h2 class="block-title">Get it right now</h2>
+						<div class="block-p">Supported By Every Platfrom<a href="#" class="green"> know more</a></div>
+
 						<div class="container-block-platform">
 							<div class="block-platform">
-								<a class="block ios" href="https://www.apple.com" target="blank">
+								<a href="https://www.apple.com" target="blank" class="block ios">
 									<div class="block-img"><i class="fab fa-apple"></i></div>
 									<div class="block-platform-text">Get From<br><span class="bold">App Store</span>
 									</div>
@@ -1354,7 +1368,6 @@
 		</div>
 	</section>
 	<section id="testimonial">
-
 		<div class="row">
 			<div id="testimonial-c" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators-my">
@@ -1429,10 +1442,8 @@
 				</div>
 				<div class="col-lg-3 col-md-12 pb-4">
 					<div class="block-text">
-						<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
-							xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-							xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" id="SVGRoot"
-							version="1.1" viewBox="0 0 220 39" height="39" width="220">
+						<svg xmlns="http://www.w3.org/2000/svg" id="SVGRoot" version="1.1" viewBox="0 0 220 39"
+							height="39" width="220">
 							<defs id="defs4147" />
 							<metadata id="metadata4150">
 
@@ -1451,10 +1462,7 @@
 				</div>
 				<div class="col-lg-3 col-md-12 pb-4">
 					<div class="block-text">
-						<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
-							xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-							xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" id="svg10490"
-							height="39" width="207" version="1.1">
+						<svg xmlns="http://www.w3.org/2000/svg" id="svg10490" height="39" width="207" version="1.1">
 							<metadata id="metadata5071">
 
 							</metadata>
@@ -1478,7 +1486,7 @@
 				<div class="col">
 					<div class="block-contact">
 						<div class="contact-img">
-							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="69px" height="69px"
 								viewBox="0 0 42 32" enable-background="new 0 0 42 32" xml:space="preserve">
 								<g>
@@ -1508,13 +1516,13 @@
 
 						</div>
 						<div class="block-contact-p">contact us</div>
-						<div class="block-contact-h2">Say <span class="green">Hello !</span></div>
+						<h2 class="block-contact-h2">Say <span class="green">Hello !</span></h2>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-7 col-sm-12">
-					<form action="" width="100%">
+					<form action="post" style="width:100%">
 						<div class="input-group">
 							<div class="col mb-2"><input class="form-control" type="text" placeholder="Your Name"></div>
 							<div class="col mb-2"><input class="form-control" type="email" placeholder="Email"></div>
@@ -1525,12 +1533,12 @@
 							</div>
 
 						</div>
-						
-							<div class="col mt-3">
-								<textarea class="form-control" name="" id="" cols="10" rows="8"
-									placeholder="Your Message"></textarea>
-							</div>
-						
+
+						<div class="col mt-3">
+							<textarea class="form-control" name="textarea" id="textarea" cols="10" rows="8"
+								placeholder="Your Message"></textarea>
+						</div>
+
 						<div class="col">
 							<input class="bt" type="submit" value="Send Message">
 						</div>
@@ -1539,8 +1547,8 @@
 				</div>
 				<div class="col-md-5 col-sm-12">
 					<div class="text">
-						<script type="text/javascript" charset="utf-8" async
-							src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac61cc064fe674186fab01fc1c21b057310bda57ecc405fe8ce398de296cd4f1e&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+						<script async
+							src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac61cc064fe674186fab01fc1c21b057310bda57ecc405fe8ce398de296cd4f1e&amp;width=100&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
 					</div>
 				</div>
 
@@ -1552,7 +1560,7 @@
 			<div class="row ph-4-pw-0">
 				<div class="col-md-4 col-sm-12 item">
 					<div class="box-info">
-						<div class="imfo-icon"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+						<div class="imfo-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="29px" height="42px"
 								viewBox="0 0 19 32" enable-background="new 0 0 19 32" xml:space="preserve">
 								<g>
@@ -1566,13 +1574,13 @@
 										d="M7.5,4h4C11.776,4,12,3.776,12,3.5S11.776,3,11.5,3h-4C7.224,3,7,3.224,7,3.5S7.224,4,7.5,4z" />
 								</g>
 							</svg></div>
-						<div class="info-h2">HAVE A QUESTION?</div>
-						<p class="info-p"><a href="tel:+1 1234567890">+1 1234567890</a></p>
+						<h2 class="info-h2">HAVE A QUESTION?</h2>
+						<p class="info-p"><a href="tel:+11234567890">+1 1234567890</a></p>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-12 item">
 					<div class="box-info">
-						<div class="imfo-icon"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+						<div class="imfo-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="42px" height="42px"
 								viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
 								<g>
@@ -1591,13 +1599,13 @@
 									<circle fill="#828282" cx="8" cy="24" r="1" />
 								</g>
 							</svg></div>
-						<div class="info-h2">Open Mon - Fri</div>
+						<h2 class="info-h2">Open Mon - Fri</h2>
 						<p class="info-p">08:00am to 8:00pm</p>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-12 item">
 					<div class="box-info">
-						<div class="imfo-icon"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+						<div class="imfo-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="52px" height="42px"
 								viewBox="0 0 42 32" enable-background="new 0 0 42 32" xml:space="preserve">
 								<g>
@@ -1624,7 +1632,7 @@
 								</g>
 							</svg>
 						</div>
-						<div class="info-h2">Drop us an email</div>
+						<h2 class="info-h2">Drop us an email</h2>
 						<p class="info-p"><a href="mailto:help@yourdomain.com">help@yourdomain.com</a></p>
 					</div>
 				</div>
@@ -1636,7 +1644,7 @@
 			<div class="row">
 				<div class="col-md-8 col-sm-12">
 					<div class="block-our">
-						<div class="block-our-h2">TRY OUR <span class="bold">SERVICES</span> RIGHT NOW</div>
+						<h2 class="block-our-h2">TRY OUR <span class="bold">SERVICES</span> RIGHT NOW</h2>
 						<p class="block-our-p">The most appealing part of the theme it’s very clear and light. And it
 							reavels invidual.</p>
 					</div>
