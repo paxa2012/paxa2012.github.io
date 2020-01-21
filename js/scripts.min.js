@@ -31,24 +31,59 @@ $(function () {
 				$('.collapse').removeClass('showw');
 			}
 		});
-
 	});
-
 
 
 
 	/// прилипани меню к верху экрана
-	$(window).on("scroll", function () {
-		$(document).scrollTop() > 840 ? $(".navbar").addClass("fixed-top") : $(".navbar").removeClass("fixed-top");
+	var mediaQuery = window.matchMedia('(max-width: 768px)');
 
-	});
+	if (mediaQuery.matches) {
+		$(window).on("scroll", function () {
+			$(document).scrollTop() > 900 ? $(".navbar").addClass("fixed-top") : $(".navbar").removeClass("fixed-top");
 
+		});
+	}else{
+		$(window).on("scroll", function () {		
+			$(document).scrollTop() > 700 ? $(".navbar").addClass("fixed-top") : $(".navbar").removeClass("fixed-top");
+	
+		});
+		
+	}
+	var mediaQuerySm = window.matchMedia('(max-width: 560px)');
+
+	if (mediaQuerySm.matches) {
+		$(window).on("scroll", function () {
+			$(document).scrollTop() > 700 ? $(".navbar").addClass("fixed-top") : $(".navbar").removeClass("fixed-top");
+
+		});
+		
+	}
+	var mediaQueryXs = window.matchMedia('(max-width: 400px)');
+
+	if (mediaQueryXs.matches) {
+		$(window).on("scroll", function () {
+			$(document).scrollTop() > 950 ? $(".navbar").addClass("fixed-top") : $(".navbar").removeClass("fixed-top");
+
+		});
+		
+		
+	}
+	var mediaQueryXss = window.matchMedia('(max-width: 320px)');
+
+	if (mediaQueryXss.matches) {
+		$(window).on("scroll", function () {
+			$(document).scrollTop() > 950 ? $(".navbar").addClass("fixed-top") : $(".navbar").removeClass("fixed-top");
+
+		});
+	}
+
+	
 
 	/// отступ первой секции от меню
 	$(window).on("scroll", function () {
-		$(document).scrollTop() > 840 ? $(".block-services").css({ 'margin-top': '217px' }) : $(".block-services").css({ 'margin-top': '81px' });
+		$(document).scrollTop() > 700 ? $(".block-services").css({ 'margin-top': '217px' }) : $(".block-services").css({ 'margin-top': '81px' });
 	});
-
 
 
 
@@ -62,6 +97,7 @@ $(function () {
 
 	$('.nav-link').on('click', function (e) {
 		e.preventDefault();
+		
 	});
 
 	$('.gallery').mauGallery({
@@ -102,6 +138,11 @@ $(function () {
 	$(".link-nav").click(function () {
 		$(".link-nav").removeClass('activ');
 		$(this).addClass('activ')
+		$('.showw').slideToggle('slow', function () {
+			if ($('.showw').css('display') == 'none') {
+				$('.collapse').removeClass('showw');
+			}
+		});
 
 		$("html, body").animate({
 			scrollTop: $($(this).attr("href")).offset().top // .top+margin - ставьте минус, если хотите увеличить отступ
