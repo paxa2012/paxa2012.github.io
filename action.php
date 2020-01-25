@@ -15,6 +15,6 @@
             return mail($to, $subject, $message, $headers);
         }
         
-        $k=sendMail('example@mail.ru','site');
+        $k=sendMail('paxa2012@gmail.com','site');
     return $k ? 'сообщение успешно отправлено' : 'при отправке сообщения возникли ошибки';
   ?>

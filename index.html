@@ -36,10 +36,10 @@
 						<!--<img src="./img/video_icon.png" alt="">-->
 					</div>
 					<div class="header-form">
-						<form class="form" action="post">
-							<input class="input-text" type="text" placeholder="Your Name">
-							<input class="input-text" type="email" placeholder="Email Adress">
-							<input class="btn-sub" type="submit" value="Subscribe »">
+						<form class="form" action="action.php" method="POST">
+							<input class="input-text" name="name" type="text" placeholder="Your Name">
+							<input class="input-text" name="email" type="email" placeholder="Email Adress">
+							<input class="btn-sub" type="submit" onclick="this.disabled=true;" value="Subscribe »">
 						</form>
 					</div>
 					<p class="header-p--bottom">* We don’t share your personal<br>info with anyone Check out our <a
@@ -1422,7 +1422,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-2 col-md-12 pb-4 item">
-					<div class="block-text-p">Featured in -:</>
+					<div class="block-text-p">Featured in -:</div>
 				</div>
 				<div class="col-lg-2 col-md-12 pb-4 item">
 					<div class="block-text">
@@ -1518,14 +1518,14 @@
 			</div>
 			<div class="row">
 				<div class="col-md-7 col-sm-12">
-					<form action="action.php" method="post" style="width:100%">
+					<form action="action.php" method="post" class="form__contact" style="width:100%">
 						<div class="input-group">
-							<div class="col mb-2"><input class="form-control" type="text" placeholder="Your Name"></div>
-							<div class="col mb-2"><input class="form-control" type="email" placeholder="Email"></div>
+							<div class="col mb-2"><input class="form-control" name="Name" type="text" placeholder="Your Name"></div>
+							<div class="col mb-2"><input class="form-control" name="email" type="email" placeholder="Email"></div>
 						</div>
 						<div class="input-group mt-2">
 							<div class="col mb-2">
-								<input class="form-control" type="text" placeholder="Subject">
+								<input class="form-control" name="Subject" type="text" placeholder="Subject">
 							</div>
 
 						</div>
@@ -1695,10 +1695,9 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
-	<script src="./js/maugallery.js"></script>
+	<script src="/js/maugallery.js"></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js'></script>
-	<script src="./js/jquery.counterup.min.js"></script>
-	<script src="./js/jquery.spincrement.min.js"></script>
+	<script src="/js/jquery.spincrement.min.js"></script>
 	<script src="/js/scripts.min.js"></script>
 
 </body>
