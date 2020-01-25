@@ -36,10 +36,10 @@
 						<!--<img src="./img/video_icon.png" alt="">-->
 					</div>
 					<div class="header-form">
-						<form class="form" action="action.php" method="POST">
-							<input class="input-text" name="name" type="text" placeholder="Your Name">
-							<input class="input-text" name="email" type="email" placeholder="Email Adress">
-							<input class="btn-sub" type="submit" onclick="this.disabled=true;" value="Subscribe »">
+						<form class="form" method="POST">
+							<input class="input-text" id="name" name="name" type="text" placeholder="Your Name" required>
+							<input class="input-text" id="email" name="email" type="email" placeholder="Email Adress" required>
+							<input class="btn-sub" id='submit' type="submit" value="Subscribe »">
 						</form>
 					</div>
 					<p class="header-p--bottom">* We don’t share your personal<br>info with anyone Check out our <a
@@ -1518,25 +1518,25 @@
 			</div>
 			<div class="row">
 				<div class="col-md-7 col-sm-12">
-					<form action="action.php" method="post" class="form__contact" style="width:100%">
+					<form method="post" class="form__contact" style="width:100%">
 						<div class="input-group">
-							<div class="col mb-2"><input class="form-control" name="Name" type="text" placeholder="Your Name"></div>
-							<div class="col mb-2"><input class="form-control" name="email" type="email" placeholder="Email"></div>
+							<div class="col mb-2"><input class="form-control" id ="name_contact" name="Name" type="text" placeholder="Your Name" required></div>
+							<div class="col mb-2"><input class="form-control" id="email_contact" name="email" type="email" placeholder="Email" required></div>
 						</div>
 						<div class="input-group mt-2">
 							<div class="col mb-2">
-								<input class="form-control" name="Subject" type="text" placeholder="Subject">
+								<input class="form-control" id="subject_contact" name="Subject" type="text" placeholder="Subject" required>
 							</div>
 
 						</div>
 
 						<div class="col mt-3">
-							<textarea class="form-control" name="textarea" id="textarea" cols="10" rows="8"
-								placeholder="Your Message"></textarea>
+							<textarea class="form-control" id="textarea_contact" name="textarea" id="textarea" cols="10" rows="8"
+								placeholder="Your Message" required></textarea>
 						</div>
 
 						<div class="col">
-							<input class="bt" type="submit" value="Send Message">
+							<input class="bt" id ="submit_contact" type="submit" value="Send Message">
 						</div>
 
 					</form>
