@@ -127,26 +127,26 @@ $(function () {
 	});
 
 
-	//////// counter для секции overlay
-	var show = true;
-	var countbox = ".counter";
-	$(window).on("scroll load resize", function () {
-		if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
-		var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
-		var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
-		var w_height = $(window).height(); // Высота окна браузера
-		var d_height = $(document).height(); // Высота всего документа
-		var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
-		if (w_top + 800 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
-			$('.counter').css('opacity', '1');
-			$('.counter').spincrement({
-				thousandSeparator: "",
-				duration: 1200
-			});
-
-			show = false;
-		}
-	});
+		//////// counter для секции overlay
+		var show = true;
+		var countbox = ".counter";
+		$(window).on("scroll load resize", function () {
+			if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+			var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+			var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
+			var w_height = $(window).height(); // Высота окна браузера
+			var d_height = $(document).height(); // Высота всего документа
+			var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+			if (w_top + 800 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+				$('.counter').css('opacity', '1');
+				$('.counter').spincrement({
+					thousandSeparator: "",
+					duration: 1200
+				});
+				 
+				show = false;
+			}
+		});
 
 
 	///// плавная прокрутка при нажатии на пункты меню
@@ -184,44 +184,21 @@ function playVid() {
 
 
 var form_sub = document.querySelector('.btn-sub')
-form_sub.addEventListener('click', function (e) {
+form_sub.addEventListener('click' , function(e){
 	e.preventDefault()
-	var name = document.getElementById('name').value
-	var email = document.getElementById('email').value
-	if (name != '' && email != '') {
-		document.getElementById('submit').removeAttribute('disabled')
-		var subscribe = document.querySelector('form')
-		subscribe.classList.add('overlay__form')
-	}
-	else {
-		document.getElementById('submit').setAttribute('disabled')
-
-	}
+	var subscribe = document.querySelector('form')
+	subscribe.classList.add('overlay__form')
 })
 var form_sub_contact = document.querySelector('.bt')
-form_sub_contact.addEventListener('click', function (e) {
+form_sub_contact.addEventListener('click' , function(e){
 	e.preventDefault()
-	var name_contact = document.getElementById('name_contact').value
-	var email_contact = document.getElementById('email_contact').value
-	var subject_contact = document.getElementById('subject_contact').value
-
-	if (name_contact != '' && email_contact != '' && subject_contact != '') {
-		document.getElementById('submit_contact').removeAttribute('disabled')
-		var subscribe = document.querySelector('form')
-		subscribe.classList.add('overlay__form')
-		var subscribe_contact = document.querySelector('.form__contact')
-		subscribe_contact.classList.add('overlay__form--contact')
-		subscribe_contact.reset()
-		setInterval(() => {
-			subscribe_contact.classList.remove('overlay__form--contact')
-		}, 10000);
-	}
-	else {
-		document.getElementById('submit_contact').setAttribute('disabled')
-	}
-
-
-
+	var subscribe_contact = document.querySelector('.form__contact')
+	subscribe_contact.classList.add('overlay__form--contact')
+	subscribe_contact.reset()
+	setInterval(() => {
+		subscribe_contact.classList.remove('overlay__form--contact')
+	}, 10000);
+	
 })
 
 
