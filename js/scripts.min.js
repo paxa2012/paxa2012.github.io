@@ -158,14 +158,17 @@ $(function () {
 				$('.collapse').removeClass('showw');
 			}
 		});
-
+		
+		
+		
 		$('html, body').animate({
+			
+			
 			scrollTop: $($(this).attr('href')).offset().top // .top+margin - ставьте минус, если хотите увеличить отступ
 		}, {
 			duration: 1000, // тут можно контролировать скорость
 			easing: 'swing'
 		});
-
 		return false;
 	});
 });
