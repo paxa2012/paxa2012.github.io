@@ -17,10 +17,11 @@
 <body>
     <header class="main__header" style="background-image: url('./img/4.jpg');">
         <div class="fixed-menu">
-            <i class="material-icons menu">menu</i>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
             <i class="material-icons close">close</i>
         </div>
-        <div class="toolbar">
+        <ul id="slide-out" class="sidenav toolbar">
             <div class="toolbar__tel">
                 <a class="waves-effect waves-light" href="index.html">
                     <img src="./img/Логотип_мельница.png" alt="Логотип">
@@ -28,12 +29,15 @@
                 </a>
 
             </div>
+
             <nav class="navbar">
                 <ul>
                     <li> <a class="waves-effect waves-light" href="index.html">Главная</a></li>
                     <li> <a class="waves-effect waves-light" href="services.html">Товары и услуги</a></li>
-                    <li> <a class="waves-effect waves-light" href="recomendatsii-po-primrneniu.html">Рекомендации по применению</a></li>
-                    <li> <a class="waves-effect waves-light" href="mineral'nyye_udobreniya.html">Азотные минеральные удобрения</a></li>
+                    <li> <a class="waves-effect waves-light" href="recomendatsii-po-primrneniu.html">Рекомендации по
+                            применению</a></li>
+                    <li> <a class="waves-effect waves-light" href="mineral'nyye_udobreniya.html">Азотные минеральные
+                            удобрения</a></li>
                     <li> <a class="waves-effect waves-light" href="сertifications.html">Сертификаты</a></li>
                     <li> <a class="waves-effect waves-light" href="reviews.html">Отзывы</a></li>
                     <li> <a class="waves-effect waves-light" href="contact.html">Контакты</a></li>
@@ -52,8 +56,10 @@
                 </div>
 
             </div>
-        </div>
-        <div class="header">
+
+        </ul>
+        
+        <div class="header s12">
             <div class="container">
                 <div class="header__wraper">
                     <div class="header__subtitle">Эксклюзивный дистрибьютор ООО &ldquo;РОСОМУ&rdquo;</div>
@@ -69,8 +75,8 @@
             <h2 class="content__h2">Lorem.</h2>
             <p class="content__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur officiis doloribus,
                 debitis voluptatum repellat omnis mollitia corrupti accusamus sit deleniti!</p>
-            <div class="content__row">
-                <div class="content__item">
+            <div class="content__row row">
+                <div class="content__item col s12 m6 l3">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="./img/unnamed.jpg">
@@ -88,7 +94,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content__item">
+                <div class="content__item col s12 m6 l3">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="./img/_1441-624.jpg">
@@ -106,7 +112,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content__item">
+                <div class="content__item col s12 m6 l3">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="./img/_73289-74.jpg">
@@ -124,7 +130,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content__item">
+                <div class="content__item col s12 m6 l3">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator"
@@ -145,6 +151,138 @@
                 </div>
             </div>
             <h2 class="content__h2 uc">Наша работа - Щедрый урожай!</h2>
+            <div class="row">
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/sample-1.jpg">
+                            <span class="card-title">Card Title</span>
+                            <a href="tel:89282808892"
+                                class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
+                                    class="material-icons">phone</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>Подробная информация по телефону</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/sample-1.jpg">
+                            <span class="card-title">Card Title</span>
+                            <a href="tel:89282808892"
+                                class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
+                                    class="material-icons">phone</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>Подробная информация по телефону</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/sample-1.jpg">
+                            <span class="card-title">Card Title</span>
+                            <a href="tel:89282808892"
+                                class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
+                                    class="material-icons">phone</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>Подробная информация по телефону</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./img/432032762_w640_h640_privyazka_003____2_jjjjjjj.jpg">
+                            <span class="card-title">Card Title</span>
+                            <a href="tel:89282808892"
+                                class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
+                                    class="material-icons">phone</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>Подробная информация по телефону</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./img/432032161_w640_h640_dja_gazona_5_kg.jpg">
+                            <span class="card-title">Card Title</span>
+                            <a href="tel:89282808892"
+                                class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
+                                    class="material-icons">phone</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>Подробная информация по телефону</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./img/432031641_w640_h640_47783_banner2950h2500_2.jpg">
+                            <span class="card-title">Card Title</span>
+                            <a href="tel:89282808892"
+                                class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
+                                    class="material-icons">phone</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>Подробная информация по телефону</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue">
+                  <div class="circle-clipper left">
+                    <div class="circle"></div>
+                  </div><div class="gap-patch">
+                    <div class="circle"></div>
+                  </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                  </div>
+                </div>
+          
+                <div class="spinner-layer spinner-red">
+                  <div class="circle-clipper left">
+                    <div class="circle"></div>
+                  </div><div class="gap-patch">
+                    <div class="circle"></div>
+                  </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                  </div>
+                </div>
+          
+                <div class="spinner-layer spinner-yellow">
+                  <div class="circle-clipper left">
+                    <div class="circle"></div>
+                  </div><div class="gap-patch">
+                    <div class="circle"></div>
+                  </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                  </div>
+                </div>
+          
+                <div class="spinner-layer spinner-green">
+                  <div class="circle-clipper left">
+                    <div class="circle"></div>
+                  </div><div class="gap-patch">
+                    <div class="circle"></div>
+                  </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                  </div>
+                </div>
+              </div>
+            -->
         </div>
     </main>
     <footer class=" page-footer footer">
@@ -158,7 +296,7 @@
                         Aut temporibus aliquid earum magnam rerum vel.</p>
                 </div>
                 <div class="col l5 offset-l1 s12">
-                    <h5 class="white-text">Навиция по сайту</h5>
+                    <h5 class="white-text">Навигация по сайту</h5>
                     <div class="footer__wraper">
                         <ul class="footer__ul">
                             <li class="footer__nav"><a class="grey-text text-lighten-3 waves-effect waves-light"
@@ -172,18 +310,19 @@
                             <li class="footer__nav"><a class="grey-text text-lighten-3 waves-effect waves-light"
                                     href="сertifications.html">Сертификаты</a>
                             </li>
-                            <li class="footer__nav"> <a class="grey-text text-lighten-3 waves-effect waves-light" href="reviews.html">Отзывы</a></li>
+                            <li class="footer__nav"> <a class="grey-text text-lighten-3 waves-effect waves-light"
+                                    href="reviews.html">Отзывы</a></li>
                             <li class="footer__nav"><a class="grey-text text-lighten-3 waves-effect waves-light"
                                     href="contact.html">Контакты</a></li>
                         </ul>
                         <ul class="footer__ul">
-                            <li class="footer__social waves-effect waves-light"><a target="blank" href="http://vk.com"><i
-                                        class="fab fa-vk"></i></a></li>
+                            <li class="footer__social waves-effect waves-light"><a target="blank"
+                                    href="http://vk.com"><i class="fab fa-vk"></i></a></li>
 
-                            <li class="footer__social waves-effect waves-light"><a target="blank" href="http://facebook.com"><i
-                                        class="fab fa-facebook-f"></i></a></li>
-                            <li class="footer__social waves-effect waves-light"><a target="blank" href="http://instagram.com/organika77/"><i
-                                        class="fab fa-instagram"></i></a></li>
+                            <li class="footer__social waves-effect waves-light"><a target="blank"
+                                    href="http://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="footer__social waves-effect waves-light"><a target="blank"
+                                    href="http://instagram.com/organika77/"><i class="fab fa-instagram"></i></a></li>
                         </ul>
                     </div>
                 </div>
