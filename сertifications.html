@@ -17,10 +17,11 @@
 <body>
     <header class="main__header" style="background-image: url('./img/4.jpg');">
         <div class="fixed-menu">
-            <i class="material-icons menu">menu</i>
-            <i class="material-icons close">close</i>
+            <a href="#" data-target="slide-out" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
         </div>
-        <div class="toolbar">
+        <ul id="slide-out" class="sidenav toolbar">
             <div class="toolbar__tel">
                 <a class="waves-effect waves-light" href="index.html">
                     <img src="./img/Логотип_мельница.png" alt="Логотип">
@@ -28,12 +29,15 @@
                 </a>
 
             </div>
+
             <nav class="navbar">
                 <ul>
                     <li> <a class="waves-effect waves-light" href="index.html">Главная</a></li>
                     <li> <a class="waves-effect waves-light" href="services.html">Товары и услуги</a></li>
-                    <li> <a class="waves-effect waves-light" href="recomendatsii-po-primrneniu.html">Рекомендации по применению</a></li>
-                    <li> <a class="waves-effect waves-light" href="mineral'nyye_udobreniya.html">Азотные минеральные удобрения</a></li>
+                    <li> <a class="waves-effect waves-light" href="recomendatsii-po-primrneniu.html">Рекомендации по
+                            применению</a></li>
+                    <li> <a class="waves-effect waves-light" href="mineral'nyye_udobreniya.html">Азотные минеральные
+                            удобрения</a></li>
                     <li> <a class="waves-effect waves-light" href="сertifications.html">Сертификаты</a></li>
                     <li> <a class="waves-effect waves-light" href="reviews.html">Отзывы</a></li>
                     <li> <a class="waves-effect waves-light" href="contact.html">Контакты</a></li>
@@ -52,7 +56,8 @@
                 </div>
 
             </div>
-        </div>
+
+        </ul>
         <div class="header">
             <div class="container">
                 <div class="header__wraper">
@@ -67,6 +72,7 @@
     <main class='content'>
         <div class="container">
             <h2 class="content__h2">Сертификаты.</h2>
+            <img class="responsive-img" src="./img/Сертификат-1.png" alt="cthnbabnfr">
         </div>
     </main>
     <footer class=" page-footer footer">
@@ -80,7 +86,7 @@
                         Aut temporibus aliquid earum magnam rerum vel.</p>
                 </div>
                 <div class="col l5 offset-l1 s12">
-                    <h5 class="white-text">Навиция по сайту</h5>
+                    <h5 class="white-text">Навигация по сайту</h5>
                     <div class="footer__wraper">
                         <ul class="footer__ul">
                             <li class="footer__nav"><a class="grey-text text-lighten-3 waves-effect waves-light"
