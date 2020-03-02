@@ -17,10 +17,11 @@
 <body>
     <header class="main__header" style="background-image: url('./img/4.jpg');">
         <div class="fixed-menu">
-            <i class="material-icons menu">menu</i>
-            <i class="material-icons close">close</i>
+            <a href="#" data-target="slide-out" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
         </div>
-        <div class="toolbar">
+        <ul id="slide-out" class="sidenav toolbar">
             <div class="toolbar__tel">
                 <a class="waves-effect waves-light" href="index.html">
                     <img src="./img/Логотип_мельница.png" alt="Логотип">
@@ -28,19 +29,18 @@
                 </a>
 
             </div>
+
             <nav class="navbar">
                 <ul>
-                    <ul>
-                        <li> <a class="waves-effect waves-light" href="index.html">Главная</a></li>
-                        <li> <a class="waves-effect waves-light" href="services.html">Товары и услуги</a></li>
-                        <li> <a class="waves-effect waves-light" href="recomendatsii-po-primrneniu.html">Рекомендации по
-                                применению</a></li>
-                        <li> <a class="waves-effect waves-light" href="mineral'nyye_udobreniya.html">Азотные минеральные
-                                удобрения</a></li>
-                        <li> <a class="waves-effect waves-light" href="сertifications.html">Сертификаты</a></li>
-                        <li> <a class="waves-effect waves-light" href="reviews.html">Отзывы</a></li>
-                        <li> <a class="waves-effect waves-light" href="contact.html">Контакты</a></li>
-                    </ul>
+                    <li> <a class="waves-effect waves-light" href="index.html">Главная</a></li>
+                    <li> <a class="waves-effect waves-light" href="services.html">Товары и услуги</a></li>
+                    <li> <a class="waves-effect waves-light" href="recomendatsii-po-primrneniu.html">Рекомендации по
+                            применению</a></li>
+                    <li> <a class="waves-effect waves-light" href="mineral'nyye_udobreniya.html">Азотные минеральные
+                            удобрения</a></li>
+                    <li> <a class="waves-effect waves-light" href="сertifications.html">Сертификаты</a></li>
+                    <li> <a class="waves-effect waves-light" href="reviews.html">Отзывы</a></li>
+                    <li> <a class="waves-effect waves-light" href="contact.html">Контакты</a></li>
                 </ul>
             </nav>
             <div class="bottom_link">
@@ -56,7 +56,8 @@
                 </div>
 
             </div>
-        </div>
+
+        </ul>
         <div class="header">
             <div class="container">
                 <div class="header__wraper">
@@ -93,37 +94,195 @@
             <table class="striped centered">
                 <thead>
                     <tr>
-                    <tr>
                         <th>Вид</th>
                         <th>Культура</th>
                         <th>Доза применения удобрения</th>
                         <th>Рекомендации по применению</th>
-                    </tr>
                     </tr>
                 </thead>
 
                 <tbody>
                     <tr>
                         <td></td>
-                        <td>Alvin</td>
-                        <td>Eclair</td>
-                        <td>$0.87</td>
+                        <td>Зерновые, технические культуры</td>
+                        <td>50-100 кг/га</td>
+                        <td>Внесение при посеве</td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td>Alan</td>
-                        <td>Jellybean</td>
-                        <td>$3.76</td>
+                        <td>Однолетние и многолетние травы</td>
+                        <td>200-300кг/га</td>
+                        <td>Внесение при посеве</td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td>Jonathan</td>
-                        <td>Lollipop</td>
-                        <td>$7.00</td>
+                        <td>Плодово-ягодные культуры</td>
+                        <td>80-120 г/растение</td>
+                        <td>Внесение при посеве</td>
                     </tr>
+                    <tr>
+                        <td></td>
+                        <td>Плодово-ягодные культуры</td>
+                        <td>100-300кг/га</td>
+                        <td>Корневая подкормка растений 1-2 раза в <br>течении вегетационного периода</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Декоративные, в т.ч.хвойные деревья и кустарники</td>
+                        <td>50-100 г/растение</td>
+                        <td>Внесение при посадке</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Декоративные, в т.ч.хвойные деревья и кустарники</td>
+                        <td>100-250 кг/га</td>
+                        <td>Корневая подкормка растений 1-2 раза в течение<br> вегетационного периода</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Овощные культуры (защищенный грунт)</td>
+                        <td>5-10% на м3 грунта</td>
+                        <td>Внесение при подготовке почвы</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Овощные культуры (открытый грунт)</td>
+                        <td>500-1000кг/га</td>
+                        <td>Корневая подкормка растений 1-2 раза в течение <br>вегетационного периода</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Картофель</td>
+                        <td>300-500кг/га</td>
+                        <td>Внесение при посадке</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Свекла сахарная, свекла столовая, свекла кормовая, турнепс</td>
+                        <td>500-700кг/га</td>
+                        <td>Внесение при посеве</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Газонные травы</td>
+                        <td>30-50кг/100м2</td>
+                        <td>Основное внесение</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Газонные травы</td>
+                        <td>200-300кг/га</td>
+                        <td>Корневая подкормка растений в течение <br>вегетационного периода</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Цветочно-декоративные культуры (Защищенный грунт)</td>
+                        <td>5-10% на м3 грунта</td>
+                        <td>Внесение при подготовке почвы</td>
+                    </tr>
+                     <tr>
+                        <td></td>
+                        <td>Цветочно-декоративные культуры</td>
+                        <td>100-300кг/га</td>
+                        <td>Корневая подкормка растений в течение <br>вегетационного периода</td>
+                    </tr>
+
+
+                   
                 </tbody>
             </table>
             <img src="./img/unnamed.jpg" alt="Рекомендации по применению органоминерального удобрения «УНИВЕРСАЛЬНОЕ» ">
+            <table class="striped centered">
+                <thead>
+                    <tr>
+                    <tr>
+                        <th>Культура:</th>
+                        <th>Под перекопку:</th>
+                        <th>Подкормка:</th>
+                        <th>Особенности применения:</th>
+                    </tr>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Картофель</td>
+                        <td>100-120г/м2</td>
+                        <td>30-50г/м2</td>
+                        <td>В лунку при посадке – 10-20 грамм</td>
+                    </tr>
+                    <tr>
+                        <td>Томат, сладкий перец</td>
+                        <td>150-160г/м2</td>
+                        <td>40-60г/м2</td>
+                        <td>&mdash;</td>
+                    </tr>
+                    <tr>
+                        <td>Салат, шпинат, петрушка, укроп, горох, бобы</td>
+                        <td>80-90г/м2</td>
+                        <td>&mdash;</td>
+                        <td>&mdash;</td>
+                    </tr>
+                    <tr>
+                        <td>Морковь, свекла, лук, репа, редис</td>
+                        <td>120-150г/м2</td>
+                        <td>&mdash;</td>
+                        <td>&mdash;</td>
+                    </tr>
+                    <tr>
+                        <td>Капуста, брюква, сельдерей</td>
+                        <td>110-120г/м2</td>
+                        <td>40-60г/м2</td>
+                        <td>При внесении удобрения для подкормки рассыпают<br> вокруг растений или в междурядьях,
+                            тщательно заделывают в почту.</td>
+                    </tr>
+                    <tr>
+                        <td>Огурец, тыква, ревень</td>
+                        <td>110-120г/м2</td>
+                        <td>60-80г/м2</td>
+                        <td>При внесении удобрения для подкормки рассыпают вокруг растений или <br> в междурядьях,
+                            тщательно заделывают в почву. Подкормку производят<br> при появлении соцветий.</td>
+                    </tr>
+                    <tr>
+                        <td>Земляника, смородина (красная, черная), малина, крыжовник</td>
+                        <td>80-100г/м2</td>
+                        <td>&mdash;</td>
+                        <td>При внесении удобрения для подкормки рассыпают вокруг растений или<br> в междурядьях,
+                            тщательно заделывают в почву.<br>
+                            Ягодные - рано весной и осенью, в цветении или в фазу зеленой завязи; <br>
+                            Землянику – 1 раз рано весной и 1-2 раза после сбора урожая <br>(после сбора ягода обрезаем
+                            листья и делаем подкормку, <br>второй раз не позднее чем через 20-25 дней после обрезки
+                            листьев.</td>
+                    </tr>
+                    <tr>
+                        <td>Молодые фруктовые деревья</td>
+                        <td>&mdash;</td>
+                        <td>100-200 г/дерево</td>
+                        <td>При посадке 1,0кг. На дно ямы +1,0кг. В смеси с землей. <br>
+                            Подкормку осуществляют рано весной и осенью. </td>
+                    </tr>
+                    <tr>
+                        <td>Взрослые фруктовые деревья</td>
+                        <td>&mdash;</td>
+                        <td>350-500 г/дерево</td>
+                        <td>При посадке 2-3кг под дерево с заделкой в почву.<br>
+                            Подкормка осуществляют рано весной и осенью. </td>
+                    </tr>
+                    <tr>
+                        <td>Декоративные кустарники, деревья</td>
+                        <td>150-200г/м2</td>
+                        <td>100-150 г/куст</td>
+                        <td>При посадке 1-2кг под растение с заделкой в почву.<br>
+                            Подкормку осуществляют рано весной и осенью.</td>
+                    </tr>
+                    <tr>
+                        <td>Для газонных трав</td>
+                        <td>100-150г/м2</td>
+                        <td>30-50 г/м2</td>
+                        <td>Перед посевом семян и укладкой рулонного газона. </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </main>
     <footer class=" page-footer footer">
@@ -137,7 +296,7 @@
                         Aut temporibus aliquid earum magnam rerum vel.</p>
                 </div>
                 <div class="col l5 offset-l1 s12">
-                    <h5 class="white-text">Навиция по сайту</h5>
+                    <h5 class="white-text">Навигация по сайту</h5>
                     <div class="footer__wraper">
                         <ul class="footer__ul">
                             <li class="footer__nav"><a class="grey-text text-lighten-3 waves-effect waves-light"
