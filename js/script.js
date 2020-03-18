@@ -3,6 +3,6 @@ $(function () {
 
 
  
-    $('.sidenav').sidenav();
+    //$('.sidenav').sidenav();
 
 });
