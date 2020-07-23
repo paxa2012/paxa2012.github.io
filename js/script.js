@@ -15,6 +15,8 @@ $('.sidenav-trigger').on('click', function(){
          
      })*/
 })
+
+$('.navbar').hasClass('.')
 $('.close').on('click', function(){
     $('.toolbar').css({
         'transform': 'translateX(-350px)'
