@@ -2,7 +2,8 @@ $(function () {
 
 $('.sidenav-trigger').on('click', function(){
      $('.toolbar').css({
-        'transform': 'translateX(0)'
+        'transform': 'translateX(0)',
+        
      })
      /*$('.content').css({
          'position': 'absolute',
