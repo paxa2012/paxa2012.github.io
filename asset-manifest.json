@@ -1,20 +1,38 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c5d1c35.css",
-    "main.js": "/static/js/main.b032fbb6.js",
+    "main.css": "/static/css/main.2f9dd110.css",
+    "main.js": "/static/js/main.6e65ad8a.js",
+    "static/js/962.8b0a4fa9.chunk.js": "/static/js/962.8b0a4fa9.chunk.js",
     "static/js/787.ee7a7e98.chunk.js": "/static/js/787.ee7a7e98.chunk.js",
-    "static/media/attachment.jpeg": "/static/media/attachment.152698490fddd0076842.jpeg",
+    "static/media/attachment_2.jpeg": "/static/media/attachment_2.96a4ff019564ecb60c92.jpeg",
+    "static/media/attachment_12.jpeg": "/static/media/attachment_12.d5001bc3ed57489660f2.jpeg",
+    "static/media/attachment_9.jpeg": "/static/media/attachment_9.5df65c993c22d027dc2f.jpeg",
+    "static/media/attachment_3.jpeg": "/static/media/attachment_3.29e4e503a1f1f21f2e83.jpeg",
+    "static/media/attachment_5.jpeg": "/static/media/attachment_5.a8b3fddf56544735c1f5.jpeg",
+    "static/media/attachment_7.jpeg": "/static/media/attachment_7.bde72e12706cf0bc96da.jpeg",
+    "static/media/attachment_6.jpeg": "/static/media/attachment_6.457b6c66857c67dbd2fa.jpeg",
+    "static/media/attachment_1.jpeg": "/static/media/attachment_1.f8f2c0bd8287c8b46d91.jpeg",
+    "static/media/attachment_4.jpeg": "/static/media/attachment_4.ddf1d333e5fca5c80ce0.jpeg",
+    "static/media/attachment_8.jpeg": "/static/media/attachment_8.31ba49abf3a484729502.jpeg",
+    "static/media/attachment_11.jpeg": "/static/media/attachment_11.eb2fad72b952be9736cf.jpeg",
+    "static/media/attachment.jpeg": "/static/media/attachment.086a6432dd5e8ebffb0a.jpeg",
+    "static/media/attachment_10.jpeg": "/static/media/attachment_10.0efbb53e46f62fd22f6c.jpeg",
+    "static/media/attachment_15.jpeg": "/static/media/attachment_15.1eecf5d53ee6f977f302.jpeg",
     "static/media/header.png": "/static/media/header.18d5573710ba25ba5197.png",
+    "static/media/attachment_14.jpeg": "/static/media/attachment_14.9041c6a75e0b3d2418cf.jpeg",
+    "static/media/attachment_16.jpeg": "/static/media/attachment_16.51f5ab92ea1637c684d9.jpeg",
+    "static/media/attachment_13.jpeg": "/static/media/attachment_13.bb5624769d0e0621a4b6.jpeg",
     "static/media/Реквизиты ИП Журавлев.jpg": "/static/media/Реквизиты ИП Журавлев.58bf79308c2053787676.jpg",
     "static/media/header2.jpg": "/static/media/header2.8a50783d904a83bdbaa1.jpg",
     "index.html": "/index.html",
     "static/media/Слой_x0020_1.svg": "/static/media/Слой_x0020_1.11a1f02bd507ffafea5acc54ee3165ad.svg",
-    "main.5c5d1c35.css.map": "/static/css/main.5c5d1c35.css.map",
-    "main.b032fbb6.js.map": "/static/js/main.b032fbb6.js.map",
+    "main.2f9dd110.css.map": "/static/css/main.2f9dd110.css.map",
+    "main.6e65ad8a.js.map": "/static/js/main.6e65ad8a.js.map",
+    "962.8b0a4fa9.chunk.js.map": "/static/js/962.8b0a4fa9.chunk.js.map",
     "787.ee7a7e98.chunk.js.map": "/static/js/787.ee7a7e98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c5d1c35.css",
-    "static/js/main.b032fbb6.js"
+    "static/css/main.2f9dd110.css",
+    "static/js/main.6e65ad8a.js"
   ]
 }
